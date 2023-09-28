@@ -48,7 +48,7 @@ pytorch 效果
 
 板端推理效果
 
-![images](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/blob/main/test_result.jpg)
+![images](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/blob/main/examples/rknn_yolov8seg_demo_open/test_result.jpg)
 
 
 说明：推理测试预处理没有考虑等比率缩放，激活函数 SiLU 用 Relu 进行了替换。由于使用的数据不多，效果并不是很好，仅供测试流程用。
