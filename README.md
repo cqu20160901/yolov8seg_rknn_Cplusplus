@@ -42,6 +42,10 @@ int main(int argc, char **argv)
 
 冒号“:”前的数子是coco的80类对应的类别，后面的浮点数是目标得分。（类别:得分）
 
+pytorch 效果
+![image](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/assets/22290931/a771924b-8725-444b-81e5-e7e36d37722d)
+
+板端推理效果
 ![images](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/blob/main/test_result.jpg)
 
 
