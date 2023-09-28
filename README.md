@@ -1,13 +1,13 @@
-# yolov8pose_rknn_Cplusplus
+# yolov8seg_rknn_Cplusplus
 
-yolov8pose  瑞芯微 rknn 板端 C++部署，使用平台 rk3588。模型转换和仿真测试参考 [onnx转rknn](https://blog.csdn.net/zhangqian_1/article/details/131571838)。
+yolov8seg 瑞芯微 rknn 板端 C++部署，使用平台 rk3588。模型转换和仿真测试参考 [onnx转rknn](https://blog.csdn.net/zhangqian_1/article/details/131571838)。
 
 ## 编译和运行
 
 1）编译
 
 ```
-cd examples/rknn_yolov8pose_demo_open
+cd examples/rknn_yolov8seg_demo_open
 
 bash build-linux_RK3588.sh
 
@@ -18,7 +18,7 @@ bash build-linux_RK3588.sh
 ```
 cd install/rknn_yolov8seg_demo_Linux
 
-./rknn_yolov8pose_demo
+./rknn_yolov8seg_demo
 
 ```
 
