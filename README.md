@@ -1,6 +1,6 @@
 # yolov8pose_rknn_Cplusplus
 
-yolov8pose  瑞芯微 rknn 板端 C++部署，使用平台 rk3588。模型转换和仿真测试参考 [onnx转rknn](https://blog.csdn.net/zhangqian_1/article/details/131857506)。
+yolov8pose  瑞芯微 rknn 板端 C++部署，使用平台 rk3588。模型转换和仿真测试参考 [onnx转rknn](https://blog.csdn.net/zhangqian_1/article/details/131571838)。
 
 ## 编译和运行
 
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 说明：推理测试预处理没有考虑等比率缩放，激活函数 SiLU 用 Relu 进行了替换。由于使用的数据不多，效果并不是很好，仅供测试流程用。
 
 把板端模型推理和后处理时耗也附上，供参考，使用的芯片rk3588，输入分辨率640x640。
-![image](![1695865111604](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/assets/22290931/880c6dac-62c6-40ac-9e1b-d36b9d93fc24)
+![image](https://github.com/cqu20160901/yolov8seg_rknn_Cplusplus/assets/22290931/880c6dac-62c6-40ac-9e1b-d36b9d93fc24)
 
 
 # 相关参考链接
