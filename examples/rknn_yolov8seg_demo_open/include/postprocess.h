@@ -40,7 +40,7 @@ public:
 private:
     std::vector<float> meshgrid;
 
-    const int class_num = 1;
+    const int class_num = 80;
     int headNum = 3;
 
     int input_w = 640;
