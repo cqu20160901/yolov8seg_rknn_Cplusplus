@@ -153,7 +153,7 @@ int GetResultRectYolov8::GetConvDetectionResult(int8_t **pBlob, std::vector<int>
                     }
                 }
 
-                if (cls_val > objectThresh)
+                if (cls_max > objectThresh)
                 {
                     xmin = (meshgrid[gridIndex + 0] - DeQnt2F32(reg[0 * mapSize[index][0] * mapSize[index][1] + h * mapSize[index][1] + w], quant_zp_reg, quant_scale_reg)) * strides[index];
                     ymin = (meshgrid[gridIndex + 1] - DeQnt2F32(reg[1 * mapSize[index][0] * mapSize[index][1] + h * mapSize[index][1] + w], quant_zp_reg, quant_scale_reg)) * strides[index];
@@ -172,7 +172,7 @@ int GetResultRectYolov8::GetConvDetectionResult(int8_t **pBlob, std::vector<int>
                         temp.xmax = xmax / input_w;
                         temp.ymax = ymax / input_h;
                         temp.classId = cls_index;
-                        temp.score = cls_val;
+                        temp.score = cls_max;
                         
                         for(int ms = 0; ms < maskNum; ms ++)
                         {
